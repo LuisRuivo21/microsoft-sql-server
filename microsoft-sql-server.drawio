@@ -1,9 +1,189 @@
-<mxfile host="app.diagrams.net" modified="2024-04-08T09:20:18.442Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" version="24.2.2" etag="Fo36b4nE2ZvEHqlViT8f" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-08T14:12:01.390Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="-AC7ALWORXHPZ9Oljb0Z" version="24.2.2" type="github">
   <diagram name="Page-1" id="_MG-8c25AsFWA5ZrAscj">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="1846" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="CKjVTdu6NN-waFkIegwr-1" value="AWS Cloud" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="40" width="970" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-2" value="&lt;font color=&quot;#b266ff&quot;&gt;VPC&lt;/font&gt;" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc2;strokeColor=#8C4FFF;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#AAB7B8;dashed=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-1">
+          <mxGeometry x="30" y="80" width="820" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-3" value="Availability Zone 1" style="fillColor=none;strokeColor=#147EBA;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#147EBA;whiteSpace=wrap;html=1;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="20" y="120" width="160" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-4" value="Availability Zone 3" style="fillColor=none;strokeColor=#147EBA;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#147EBA;whiteSpace=wrap;html=1;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="530" y="120" width="160" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-5" value="Availability Zone 2" style="fillColor=none;strokeColor=#147EBA;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#147EBA;whiteSpace=wrap;html=1;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="281" y="120" width="160" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-6" value="Public subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#7AA116;fillColor=#F2F6E8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="30" y="150" width="140" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-12" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.nat_gateway;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-6">
+          <mxGeometry x="55" y="120" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-13" value="&lt;font color=&quot;#9933ff&quot;&gt;Nat Gateway&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-6">
+          <mxGeometry x="40" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-107" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.elastic_ip_address;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-6">
+          <mxGeometry x="90" y="50" width="24" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-9" value="Private subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#00A4A6;fillColor=#E6F6F7;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="30" y="340" width="140" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-17" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.internet_gateway;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="340" y="-16" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-18" value="&lt;font color=&quot;#9933ff&quot;&gt;Internet Gateway&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="308" y="10" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-73" value="Public subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#7AA116;fillColor=#F2F6E8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="291" y="150" width="140" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-74" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.nat_gateway;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-73">
+          <mxGeometry x="55" y="120" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-75" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instance2;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-73">
+          <mxGeometry x="25" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-76" value="&lt;font color=&quot;#9933ff&quot;&gt;Nat Gateway&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-73">
+          <mxGeometry x="39" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-109" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.elastic_ip_address;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-73">
+          <mxGeometry x="89" y="50" width="24" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-77" value="Public subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#7AA116;fillColor=#F2F6E8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="540" y="150" width="140" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-78" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.nat_gateway;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-77">
+          <mxGeometry x="55" y="120" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-79" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instance2;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-77">
+          <mxGeometry x="20" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-80" value="&lt;font color=&quot;#9933ff&quot;&gt;Nat Gateway&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-77">
+          <mxGeometry x="40" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-110" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.elastic_ip_address;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-77">
+          <mxGeometry x="90" y="50" width="24" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-15" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instance2;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="50" y="190" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-82" value="&lt;font color=&quot;#ff8000&quot;&gt;RD Gateway&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="547.5" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-99" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.db_on_instance2;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="86" y="402" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-101" value="Private subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#00A4A6;fillColor=#E6F6F7;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="291" y="340" width="140" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-122" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.file_system;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-101">
+          <mxGeometry x="58" y="170" width="32.06" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-103" value="Private subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#00A4A6;fillColor=#E6F6F7;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="540" y="340" width="140" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-123" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.file_system;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-103">
+          <mxGeometry x="54.97000000000003" y="170" width="32.06" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-104" value="&lt;font color=&quot;#ff8000&quot;&gt;Secondary SQL replica&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="547.5" y="430" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-16" value="&lt;font color=&quot;#ff8000&quot;&gt;RD Gateway&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="35" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-108" value="&lt;font color=&quot;#ff8000&quot;&gt;Elastic IP&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="110" y="220" width="45" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-81" value="&lt;font color=&quot;#ff8000&quot;&gt;RD Gateway&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="300" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-111" value="&lt;font color=&quot;#ff8000&quot;&gt;Elastic IP&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="370" y="220" width="45" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-112" value="&lt;font color=&quot;#ff8000&quot;&gt;Elastic IP&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="620" y="220" width="45" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-115" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#7AA116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.fsx;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="730" y="505" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-116" value="&lt;span style=&quot;font-family: AmazonEmber, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#5ca317&quot;&gt;&lt;b&gt;Windows File Server&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="701.25" y="545" width="97.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-100" value="&lt;font color=&quot;#ff8000&quot;&gt;Primary SQL replica&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="45" y="430" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-102" value="&lt;font color=&quot;#ff8000&quot;&gt;Seconday SQL replica&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="298.5" y="430" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-105" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.db_on_instance2;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="352" y="402" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-106" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.db_on_instance2;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="597" y="402" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-119" value="&lt;font color=&quot;#666666&quot;&gt;WSFC and Always On Availability Group&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="160" y="388" width="140" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-120" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.file_system;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="77.94" y="510" width="32.06" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-121" value="&lt;span style=&quot;font-family: AmazonEmber, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#5ca317&quot;&gt;Preferred File Server&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="57.5" y="540" width="85" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-124" value="&lt;span style=&quot;font-family: AmazonEmber, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#5ca317&quot;&gt;Secondary File Server&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="323.5" y="540" width="85" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-125" value="&lt;span style=&quot;font-family: AmazonEmber, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#5ca317&quot;&gt;Secondary File Server&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-2">
+          <mxGeometry x="568.5" y="540" width="85" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-133" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.directory_service;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-1">
+          <mxGeometry x="890" y="480" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-134" value="&lt;font color=&quot;#cc0000&quot;&gt;&lt;b&gt;AWS Directory Sertvice&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="CKjVTdu6NN-waFkIegwr-1">
+          <mxGeometry x="868" y="524" width="88" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-118" value="" style="fillColor=none;strokeColor=#000000;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="510" width="640" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-126" value="" style="fillColor=none;strokeColor=#5CA317;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="600" width="760" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CKjVTdu6NN-waFkIegwr-127" target="CKjVTdu6NN-waFkIegwr-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-127" value="&lt;font color=&quot;#000000&quot;&gt;Remote Management&lt;/font&gt;" style="sketch=0;outlineConnect=0;gradientColor=none;fontColor=#545B64;strokeColor=none;fillColor=#000000;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.illustration_desktop;pointerEvents=1" vertex="1" parent="1">
+          <mxGeometry x="387.53" y="-60" width="54.95" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-135" value="" style="fillColor=none;strokeColor=#000000;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="960" width="520" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-136" value="Availability Group" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="940" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-137" value="Availability database" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1000" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-138" value="Availability database" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1000" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-139" value="Availability database" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1000" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-140" value="Primary database/replica" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1040" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-141" value="Secondary database/replica" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1040" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="CKjVTdu6NN-waFkIegwr-142" value="Secondary database/replica" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1040" width="100" height="90" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
